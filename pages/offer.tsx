@@ -6,6 +6,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import FilloutForm from "@/components/FormOffer";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const item = {
   hidden: { opacity: 0, y: "15%" },
@@ -69,7 +70,13 @@ export default function JoinStep1({ pageTitle }) {
                 you can offer.{" "}
               </h2>
               <p className="pt-2">
-                For specific questions please email contact@opendoorsformaui.com
+                For specific questions please email{" "}
+                <Link
+                  href="mailto:contact@opendoorsformaui.com"
+                  className="font-semibold"
+                >
+                  contact@opendoorsformaui.com
+                </Link>
               </p>
             </motion.div>
           </div>
