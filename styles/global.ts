@@ -38,6 +38,7 @@ export default css.global`
   }
 
   @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Press+Start+2P&display=swap");
 
   html {
     box-sizing: border-box;

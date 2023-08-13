@@ -13,7 +13,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      script: ["Permanent Marker"],
+      script: ["Caveat"],
     },
     extend: {
       borderWidth: {
