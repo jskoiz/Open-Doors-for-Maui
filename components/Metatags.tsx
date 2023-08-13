@@ -8,7 +8,7 @@ interface MetaTagsProps {
 }
 
 export default function MetaTags({
-  description = "Connecting victims of the Maui fire to resoures and shelter.",
+  description = "Connecting victims of the Maui fire to resources and shelter.",
   image = "https://opendoorsformaui.vercel.app/images/ofdm.png",
   pathname = "https://opendoorsformaui.vercel.app",
   title = "Open Doors for Maui",

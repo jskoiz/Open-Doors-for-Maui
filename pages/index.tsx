@@ -244,7 +244,6 @@ export default function HomePage({
         <title>{pageTitle}</title>
       </Head>
       <Nav primaryNav={{ show: true }} />
-
       <div
         className={`flex flex-col gap-4 px-4 pt-[6vh] lg:flex-row lg:gap-x-8 lg:px-8`}
       >
@@ -259,13 +258,13 @@ export default function HomePage({
               Maui
             </h3>
             <p>
-              The historic town of
+              The historic town of&nbsp;
               <strong className="font-semibold text-stone-800">Lāhainā</strong>
-              was destroyed. In response to this tragedy, residents from across
-              Hawaii and beyond immediately rallied to offer support and
+              &nbsp;was destroyed. In response to this tragedy, residents from
+              across Hawaii and beyond immediately rallied to offer support and
               assistance. With numerous residents displaced from their homes,
               Governor Josh Green issued a plea urging those in Hawaii capable
-              of doing so to
+              of doing so to&nbsp;
               <strong className="font-semibold text-stone-800">
                 Open Their Doors for Maui.
               </strong>
@@ -288,7 +287,7 @@ export default function HomePage({
         </div>
       </div>
 
-      {focuses && (
+      {/* {focuses && (
         <FilterPicker
           filtersList={filtersList}
           activeFilters={activeFilters}
@@ -302,10 +301,9 @@ export default function HomePage({
           viewAll={viewAll}
         />
       )}
-
       <div className={`px-4 lg:px-8`}>
         {members && <MemberDirectory members={members} />}
-      </div>
+      </div> */}
     </>
   );
 }
