@@ -55,9 +55,12 @@ export default function AboutPage({ pageTitle }) {
         >
           <p className="f1 extend">
             <motion.span className="text-stone-800" variants={item}>
-              Open Doors for Maui <br></br>is a community built directory
-              created to help connect those displaced by the fires on Maui with
-              individuals and organizations who can help.
+              Open Doors for Maui <br></br>
+              <h2>
+                is a community built directory created to help connect those
+                displaced by the fires on Maui with individuals and
+                organizations who can help.
+              </h2>
             </motion.span>{" "}
           </p>
         </motion.div>
