@@ -16,6 +16,8 @@ import {
 import { FirebaseTablesEnum } from "@/lib/enums";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
+import TabCounts from "components/ui/tab-counts";
+import { Tabs } from "registry/new-york/ui/tabs";
 
 export async function getStaticProps() {
   const focusesData: DocumentData[] = await getFirebaseTable(
@@ -109,133 +111,6 @@ export default function HomePage({
   );
   const [viewAll, setViewAll] = useState<boolean>(true);
 
-  useEffect(() => {
-    const activeFilters = focuses
-      .concat(industries)
-      .concat(experiences)
-      .concat(regions)
-      .filter((foc) => foc.active);
-    const membersWithFilters = members
-      .map((mem) => ({
-        ...mem,
-        focus: mem.focus?.map((foc) => ({
-          ...foc,
-          // update member focuses if filtered
-          active: activeFilters.map((item) => item.id).includes(foc.id),
-        })),
-        industry: mem.industry?.map((ind) => ({
-          ...ind,
-          active: activeFilters.map((item) => item.id).includes(ind.id),
-        })),
-        experienceFilter: mem.yearsExperience
-          ? [
-              {
-                id: experiences.find(
-                  (item) => item.name === mem.yearsExperience
-                ).id,
-                name: mem.yearsExperience,
-                active: activeFilters
-                  .map((item) => item.id)
-                  .includes(
-                    experiences.find(
-                      (item) => item.name === mem.yearsExperience
-                    ).id
-                  ),
-              },
-            ]
-          : [],
-        regionFilter: mem.region
-          ? [
-              {
-                id: regions.find((item) => item.name === mem.region).id,
-                name: mem.region,
-                active: activeFilters
-                  .map((item) => item.id)
-                  .includes(
-                    regions.find((item) => item.name === mem.region).id
-                  ),
-              },
-            ]
-          : [],
-      }))
-      // sort by number of filters set
-      .sort((a, b) => {
-        if (
-          a.focus
-            .concat(a.industry)
-            .concat(a.experienceFilter)
-            .concat(a.regionFilter) === undefined ||
-          b.focus
-            .concat(b.industry)
-            .concat(b.experienceFilter)
-            .concat(b.regionFilter) === undefined
-        )
-          return;
-        const firstActive = a.focus
-          .concat(a.industry)
-          .concat(a.experienceFilter)
-          .concat(a.regionFilter)
-          .map((fil) => fil?.active)
-          .filter((fil) => fil).length;
-        const nextActive = b?.focus
-          .concat(b?.industry)
-          .concat(b?.experienceFilter)
-          .concat(b?.regionFilter)
-          .map((fil) => fil?.active)
-          .filter((fil) => fil).length;
-        // if same count, randomize
-        if (nextActive === firstActive) return 0.5 - Math.random();
-        // or sort by
-        return nextActive > firstActive ? 1 : -1;
-      });
-    const selectedMemberCount = membersWithFilters.filter(
-      (mem) =>
-        mem.focus.filter((fil) => fil.active).length > 0 ||
-        mem.industry.filter((fil) => fil.active).length > 0 ||
-        mem.experienceFilter.filter((fil) => fil.active).length > 0 ||
-        mem.regionFilter.filter((fil) => fil.active).length > 0
-    ).length;
-    setMembersCount(selectedMemberCount ? selectedMemberCount : members.length);
-    setMembers(membersWithFilters);
-  }, [focuses, industries, experiences, regions]);
-
-  const setListItemActive = (
-    list?: PickerFilter[],
-    setList?: Function,
-    id?: string
-  ) => {
-    setList(
-      list.map((fil) => ({
-        ...fil,
-        active: id ? (id === fil.id ? !fil.active : fil.active) : false,
-      }))
-    );
-  };
-
-  const handleFilter = (id?: string) => {
-    let filter = filtersList.filter((foc) => id === foc.id)[0];
-    setListItemActive(filtersList, setFiltersList, id);
-    setListItemActive(focuses, setFocuses, id);
-    setListItemActive(industries, setIndustries, id);
-    setListItemActive(experiences, setExperiences, id);
-    setListItemActive(regions, setRegions, id);
-    if (activeFilters.find((item) => item.id === id)) {
-      setActiveFilters(activeFilters.filter((item) => item.id !== id));
-    } else {
-      setActiveFilters([...activeFilters, filter]);
-    }
-  };
-
-  const filterSelect = (filterType?: string) => {
-    if (viewAll) setViewAll(false);
-    const filterMap = {
-      focus: focuses,
-      industry: industries,
-      experience: experiences,
-      region: regions,
-    };
-    setFiltersList(filterMap[filterType]);
-  };
   return (
     <>
       <Head>
@@ -263,7 +138,7 @@ export default function HomePage({
               &nbsp;was destroyed. In response to this tragedy, residents from
               across Hawaii and beyond immediately rallied to offer support and
               assistance. With numerous residents displaced from their homes,
-              Governor Josh Green issued a plea urging those in Hawaii capable
+              Governor Josh Green issued a plea urging those in Hawaiʻi capable
               of doing so to&nbsp;
               <strong className="font-semibold text-stone-800">
                 Open Their Doors for Maui.
@@ -285,6 +160,11 @@ export default function HomePage({
             className="h-auto w-full md:w-3/4 lg:w-full"
           />
         </div>
+      </div>
+      <div className={`px-4 pb-10 pt-10 lg:px-8`}>
+        <Tabs defaultValue="overview" className="space-y-4">
+          <TabCounts />
+        </Tabs>
       </div>
 
       {/* {focuses && (
