@@ -44,7 +44,7 @@ export default function Nav({ backUrl, children, primaryNav }: NavProps) {
               className={`
                   rounded-lg
                   border-4
-                  border-maui-800
+                  border-maui-700
                   bg-maui-700
                   px-2
                   py-0.5
@@ -60,11 +60,14 @@ export default function Nav({ backUrl, children, primaryNav }: NavProps) {
                   sm:px-4
                   sm:py-2
                 `}
-              href="/join/01-you"
+              href="/offer"
             >
               Offer Hosting
             </Link>
-            <Link className="text-base font-medium text-stone-700" href="#">
+            <Link
+              className="text-base font-medium text-stone-700"
+              href="/seeking"
+            >
               Find Hosting
             </Link>
             <Link href="/help" className="font-script text-2xl">

@@ -238,15 +238,16 @@ export default function AboutPage({ pageTitle }) {
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">Who built this?</h3>
           <p>
- This site was created with the intention to help
-            connect families in dire need with individuals and entities capable
-            of assisting by             <Link
+            This site was created with the intention to help connect families in
+            dire need with individuals and entities capable of assisting by{" "}
+            <Link
               href="https://www.linkedin.com/in/jerrykoizumi/?source=about"
               target="_blank"
               className="font-semibold"
             >
               Jerry Koizumi Jr.
-            </Link> and any other community members who are willing to contribute.
+            </Link>{" "}
+            and any other community members who are willing to contribute.
           </p>
         </section>
         <section className="flex flex-col gap-2">
