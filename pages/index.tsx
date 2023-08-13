@@ -270,7 +270,7 @@ export default function HomePage({
               </strong>
             </p>
             <p className="mb-5">
-              This site has been built by the community to foster
+              This site has been built by the community to foster&nbsp;
               <strong className="font-semibold text-stone-800">
                 connections between willing hosts and those seeking shelter.
               </strong>
