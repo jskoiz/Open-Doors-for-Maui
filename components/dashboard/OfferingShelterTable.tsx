@@ -41,7 +41,7 @@ const salesPeople: Person[] = [
     island: "'Oahu",
   },
   {
-    name: "John C",
+    name: "John C.",
     space: "2-3 ʻOhana",
     city: "Hilo",
     island: "Hawai'i Island",
@@ -83,7 +83,9 @@ export function Recent() {
             <TableHeaderCell className="text-right">
               Space Available
             </TableHeaderCell>
-            <TableHeaderCell className="text-right">City</TableHeaderCell>
+            <TableHeaderCell className=" text-righttext-right hidden sm:table-cell">
+              City
+            </TableHeaderCell>
             <TableHeaderCell className="text-right">Island</TableHeaderCell>
           </TableRow>
         </TableHead>
@@ -95,7 +97,9 @@ export function Recent() {
               <TableRow key={item.name}>
                 <TableCell>{item.name}</TableCell>
                 <TableCell className="text-right">{item.space}</TableCell>
-                <TableCell className="text-right">{item.city}</TableCell>
+                <TableCell className=" text-righttext-right hidden sm:table-cell">
+                  {item.city}
+                </TableCell>
                 <TableCell className="text-right">
                   <Badge size="xs">{item.island}</Badge>
                 </TableCell>

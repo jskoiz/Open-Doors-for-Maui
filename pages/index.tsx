@@ -26,7 +26,7 @@ export default function HomePage({ pageTitle }) {
           <section className="flex flex-col gap-4">
             <h3 className="text-lg font-bold text-stone-800">
               On August 8th, 2023 a rapidly spreading wildfire devastated West
-              Maui
+              Maui.
             </h3>
             <p>
               The historic town of&nbsp;
