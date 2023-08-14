@@ -40,6 +40,10 @@ export default css.global`
   @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Press+Start+2P&display=swap");
 
+  .text-lg {
+    font-size: 1.85rem;
+    line-height: 1.85rem;
+  }
   html {
     box-sizing: border-box;
   }
