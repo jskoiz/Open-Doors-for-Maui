@@ -80,10 +80,10 @@ export function Recent() {
         <TableHead>
           <TableRow>
             <TableHeaderCell>Name</TableHeaderCell>
-            <TableHeaderCell className="text-right">
+            <TableHeaderCell className="text-center">
               Space Available
             </TableHeaderCell>
-            <TableHeaderCell className=" text-righttext-right hidden sm:table-cell">
+            <TableHeaderCell className=" hidden text-center sm:table-cell">
               City
             </TableHeaderCell>
             <TableHeaderCell className="text-right">Island</TableHeaderCell>
@@ -96,8 +96,8 @@ export function Recent() {
             .map((item) => (
               <TableRow key={item.name}>
                 <TableCell>{item.name}</TableCell>
-                <TableCell className="text-right">{item.space}</TableCell>
-                <TableCell className=" text-righttext-right hidden sm:table-cell">
+                <TableCell className="text-center">{item.space}</TableCell>
+                <TableCell className=" hidden text-center sm:table-cell">
                   {item.city}
                 </TableCell>
                 <TableCell className="text-right">

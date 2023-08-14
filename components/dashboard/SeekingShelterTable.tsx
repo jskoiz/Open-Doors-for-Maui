@@ -72,7 +72,7 @@ export function Rrs() {
         <TableHead>
           <TableRow>
             <TableHeaderCell>Name</TableHeaderCell>
-            <TableHeaderCell className="text-right">
+            <TableHeaderCell className="text-center">
               Relocation ok?
             </TableHeaderCell>
             <TableHeaderCell className="text-right">
@@ -87,7 +87,7 @@ export function Rrs() {
             .map((item) => (
               <TableRow key={item.name}>
                 <TableCell>{item.name}</TableCell>
-                <TableCell className="text-right">{item.relocate}</TableCell>
+                <TableCell className="text-center">{item.relocate}</TableCell>
                 <TableCell className="text-right">
                   <Badge size="xs">{item.space}</Badge>
                 </TableCell>
