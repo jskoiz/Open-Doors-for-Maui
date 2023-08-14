@@ -18,7 +18,6 @@ const FilloutForm = () => {
       data-fillout-id="bkArZdiCpaus"
       data-fillout-embed-type="standard"
       data-fillout-inherit-parameters
-      data-fillout-dynamic-resize
     ></div>
   );
 };

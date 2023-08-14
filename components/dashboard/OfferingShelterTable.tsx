@@ -17,67 +17,74 @@ import { useState } from "react";
 type Person = {
   name: string;
   space: string;
-  relocate: string;
+  city: string;
+  island: string;
 };
 
 const salesPeople: Person[] = [
   {
-    name: "Nani L.",
+    name: "George L.",
     space: "2-3 ʻOhana",
-    relocate: "Yes",
+    city: "Kahului",
+    island: "Maui",
   },
   {
-    name: "Richard D.",
-    space: "2-3 ʻOhana",
-    relocate: "No",
+    name: "Lena W.",
+    space: "3-4 'Ohana",
+    city: "Kula",
+    island: "Maui",
   },
   {
-    name: "Pat K.",
-    space: "2-3 ʻOhana",
-    relocate: "No",
+    name: "Phil L.",
+    space: "1 Individual",
+    city: "Honolulu",
+    island: "'Oahu",
   },
   {
-    name: "Dawn L.",
+    name: "John C",
     space: "2-3 ʻOhana",
-    relocate: "No",
+    city: "Hilo",
+    island: "Hawai'i Island",
   },
   {
-    name: "Tricia P.",
-    space: "2-3 ʻOhana",
-    relocate: "Yes",
+    name: "Sarah Y.",
+    space: "1 Individual",
+    city: "Kihei",
+    island: "Maui",
   },
   {
-    name: "Leimomi K.",
-    space: "2-3 ʻOhana",
-    relocate: "No",
+    name: "Linda T.",
+    space: "3-4 ʻOhana",
+    city: "Kapolei",
+    island: "Honolulu",
   },
   {
-    name: "Shaun A.",
-    space: "1 (Individual)",
-    relocate: "Yes",
+    name: "Kawika S.",
+    space: "2-3 ʻOhana",
+    city: "Kahului",
+    island: "Maui",
   },
 ];
 
-export function Rrs() {
+export function Recent() {
   const [selectedNames, setSelectedNames] = useState<string[]>([]);
 
   const isPersonSelected = (Person: Person) =>
-    selectedNames.includes(Person.name) || selectedNames.length === 0;
+    selectedNames.includes(Person.island) || selectedNames.length === 0;
 
   return (
     <Card>
-      <Title>Recent Request for Housing</Title>
+      <Title>Recent Offers for Housing</Title>
       <Text>Full list available upon request</Text>
       <Table className="mt-6">
         <TableHead>
           <TableRow>
             <TableHeaderCell>Name</TableHeaderCell>
             <TableHeaderCell className="text-right">
-              Relocation ok?
+              Space Available
             </TableHeaderCell>
-            <TableHeaderCell className="text-right">
-              Space Needed
-            </TableHeaderCell>
+            <TableHeaderCell className="text-right">City</TableHeaderCell>
+            <TableHeaderCell className="text-right">Island</TableHeaderCell>
           </TableRow>
         </TableHead>
 
@@ -87,9 +94,10 @@ export function Rrs() {
             .map((item) => (
               <TableRow key={item.name}>
                 <TableCell>{item.name}</TableCell>
-                <TableCell className="text-right">{item.relocate}</TableCell>
+                <TableCell className="text-right">{item.space}</TableCell>
+                <TableCell className="text-right">{item.city}</TableCell>
                 <TableCell className="text-right">
-                  <Badge size="xs">{item.space}</Badge>
+                  <Badge size="xs">{item.island}</Badge>
                 </TableCell>
               </TableRow>
             ))}

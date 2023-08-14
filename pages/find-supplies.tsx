@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 import Plausible from "@/components/Plausible";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import FilloutForm from "@/components/FormSeeking";
+import FilloutForm from "components/FormSeekingDonation";
 import { motion } from "framer-motion";
 
 const item = {
@@ -61,13 +61,10 @@ export default function JoinStep1({ pageTitle }) {
             >
               <p className="f1 extend">
                 <motion.span className="text-stone-800" variants={item}>
-                  Find Assistance.
+                  Request supplies
                 </motion.span>{" "}
               </p>
-              <h2>
-                Fill out the form to share your information with the County of
-                Maui{" "}
-              </h2>
+              <h2>Fill out the form to request specific items you need. </h2>
               <p className="pt-2">
                 For specific questions please email contact@opendoorsformaui.com
               </p>

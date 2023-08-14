@@ -60,17 +60,29 @@ export default function Nav({ backUrl, children, primaryNav }: NavProps) {
                   sm:px-4
                   sm:py-2
                 `}
-              href="/offer"
+              href="/offer-hosting"
             >
               Offer Hosting
             </Link>
             <Link
               className="text-base font-medium text-stone-700"
-              href="/seeking"
+              href="/find-hosting"
             >
               Find Hosting
             </Link>
-            <Link href="/help" className="font-script text-2xl">
+            <Link
+              className="text-base font-medium text-stone-700"
+              href="/offer-donations"
+            >
+              Offer Donations
+            </Link>
+            <Link
+              className="text-base font-medium text-stone-700"
+              href="/find-supplies"
+            >
+              Find Supplies
+            </Link>
+            <Link href="/ways-to-help" className="font-script text-2xl">
               Ways to Help Maui
             </Link>
           </div>

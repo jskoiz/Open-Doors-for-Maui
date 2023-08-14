@@ -14,8 +14,9 @@ const FilloutForm = () => {
 
   return (
     <div
-      className="m-5 h-screen w-full p-5 md:w-full"
-      data-fillout-id="5uqtcQZ5X2us"
+      className="h-scree m-5 w-full p-5 md:w-full"
+      style={{ width: "100%", height: "900px" }}
+      data-fillout-id="sFyLFJbCinus"
       data-fillout-embed-type="standard"
       data-fillout-inherit-parameters
     ></div>

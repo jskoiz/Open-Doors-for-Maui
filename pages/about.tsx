@@ -84,9 +84,9 @@ export default function AboutPage({ pageTitle }) {
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">What is this?</h3>
           <p>
-            ODFM (Open Doors for Maui) is a comunity maintained directory where
+            ODFM (Open Doors for Maui) is a community maintained directory where
             anyone affected and seeking shelter can easily share their
-            information with the relevant organizations
+            information discretely to be matched with available housing.
           </p>
           <p>
             The objective is to display the genuine needs of the affected
@@ -234,7 +234,7 @@ export default function AboutPage({ pageTitle }) {
               className="font-semibold"
             >
               here
-            </Link>{" "}
+            </Link>
             .
           </p>
         </section>
@@ -242,7 +242,8 @@ export default function AboutPage({ pageTitle }) {
           <h3 className="text-lg font-bold text-stone-800">Who built this?</h3>
           <p>
             This site was created with the intention to help connect families in
-            dire need with individuals and entities capable of assisting by{" "}
+            dire need with individuals and entities capable of assisting. It is
+            built by{" "}
             <Link
               href="https://www.avmillabs.com"
               target="_blank"
@@ -259,7 +260,7 @@ export default function AboutPage({ pageTitle }) {
           </h3>
           <p>
             Changes, including removal from the list, can be requested via email
-            at
+            at&nbsp;
             <Link href="/edit" className="font-semibold">
               contact@opendoorsformaui.com
             </Link>

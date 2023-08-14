@@ -43,7 +43,8 @@ export default function HomePage({ pageTitle }) {
             <p className="mb-5">
               This site has been built by the community to foster&nbsp;
               <strong className="font-semibold text-stone-800">
-                connections between willing hosts and those seeking shelter.
+                connections between people who are able to offer assistance
+                through shelter and donations with those who need it most.
               </strong>
             </p>
           </section>

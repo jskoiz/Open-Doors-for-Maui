@@ -1,16 +1,20 @@
 import { Card, Metric, Text, Title, BarList, Flex, Grid } from "@tremor/react";
 
 const supplyNeeds = [
-  { name: "Food", value: 66 },
-  { name: "Water", value: 55 },
-  { name: "Hygienic Items", value: 34 },
-  { name: "Infant Items", value: 22 },
-  { name: "Medicine", value: 15 },
+  { name: "Food", value: 8 },
+  { name: "Water", value: 10 },
+  { name: "Hygienic Items", value: 4 },
+  { name: "Infant Items", value: 6 },
+  { name: "Medicine", value: 3 },
 ];
+
+const sum = supplyNeeds.reduce((total, item) => total + item.value, 0);
+supplyNeeds.sort((a, b) => b.value - a.value);
+
 const data = [
   {
     category: "Supply Requests",
-    stat: "213",
+    stat: sum.toString(),
     data: supplyNeeds,
   },
 ];

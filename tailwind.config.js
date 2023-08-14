@@ -77,7 +77,7 @@ module.exports = {
             muted: "#609966", // blue-200
             subtle: "#60a5fa", // blue-400
             DEFAULT: "#40513B", // blue-500
-            emphasis: "#1d4ed8", // blue-700
+            emphasis: "#dfedde", // maui-100 // Island Badge
             inverted: "#ffffff", // white
           },
           background: {
@@ -87,13 +87,13 @@ module.exports = {
             emphasis: "#374151", // gray-700
           },
           border: {
-            DEFAULT: "#40513B", // gray-200
+            DEFAULT: "#b4d1a4", // gray-200
           },
           ring: {
-            DEFAULT: "#40513B", // gray-200
+            DEFAULT: "#b4d1a4", // gray-200
           },
           content: {
-            subtle: "#eaf3e5", // gray-400
+            subtle: "#6b7280", // gray-400
             DEFAULT: "#384e2d", // gray-500
             emphasis: "#384e2d", // gray-700
             strong: "#111827", // gray-900
@@ -123,7 +123,7 @@ module.exports = {
             DEFAULT: "#1f2937", // gray-800
           },
           content: {
-            subtle: "#4b5563", // gray-600
+            subtle: "#374151", // gray-700
             DEFAULT: "#6b7280", // gray-600
             emphasis: "#e5e7eb", // gray-200
             strong: "#f9fafb", // gray-50
