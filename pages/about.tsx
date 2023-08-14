@@ -170,7 +170,7 @@ export default function AboutPage({ pageTitle }) {
           </p>
         </section>
         <section className="flex flex-col gap-2">
-          <h3 className="text-xl font-bold text-stone-800">Who built this?</h3>
+          <h3 className="text-lg font-bold text-stone-800">Who built this?</h3>
           <p>
             This site was created with the intention to help connect families in
             dire need with individuals and entities capable of assisting. It is
