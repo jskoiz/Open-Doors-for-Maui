@@ -84,9 +84,9 @@ export default function AboutPage({ pageTitle }) {
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">What is this?</h3>
           <p>
-            ODFM (Open Doors for Maui) is a living directory where anyone
-            affected and seeking shelter can easily share their information with
-            the relevant organizations
+            ODFM (Open Doors for Maui) is a comunity maintained directory where
+            anyone affected and seeking shelter can easily share their
+            information with the relevant organizations
           </p>
           <p>
             The objective is to display the genuine needs of the affected
@@ -97,8 +97,7 @@ export default function AboutPage({ pageTitle }) {
             This platform is designed with privacy of users as the priority. All
             personally identifiable information shared is privately and securely
             stored. This data is only meant to be aggregated and shared with
-            organizations operating in an official capacity to assist those
-            affected by the disaster.
+            recognized organizations assisting those affected by the disaster.
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -163,10 +162,11 @@ export default function AboutPage({ pageTitle }) {
             How did you come up with this idea?
           </h3>
           <p>
-            We want to help anyway we can, after watching the new conference on
-            8/10 where Gov Green explained the need to help shelter those
-            affected we were inspired to leverage our knowledge and skills to
-            facilitate that.{" "}
+            We want to help anyway we can. There are too many stories of people
+            with resources unable to connect with those who need them, or
+            displaced community members unable to connect with hosts willing to
+            open their home. We want to connect everyone who can help, to those
+            who need it.
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -217,7 +217,7 @@ export default function AboutPage({ pageTitle }) {
             Contributors are welcome and encouraged to request access to the{" "}
             <Link
               target="_blank"
-              href="https://github.com/jskoiz/opendoorsformaui"
+              href="https://github.com/jskoiz/Open-Doors-for-Maui"
               className="font-semibold"
             >
               GitHub Repo
@@ -244,11 +244,11 @@ export default function AboutPage({ pageTitle }) {
             This site was created with the intention to help connect families in
             dire need with individuals and entities capable of assisting by{" "}
             <Link
-              href="https://www.linkedin.com/in/jerrykoizumi/?source=about"
+              href="https://www.avmillabs.com"
               target="_blank"
               className="font-semibold"
             >
-              Jerry Koizumi Jr.
+              AVMIL Labs
             </Link>{" "}
             and any other community members who are willing to contribute.
           </p>
@@ -258,9 +258,10 @@ export default function AboutPage({ pageTitle }) {
             How can I update my profile? Or remove myself altogether?
           </h3>
           <p>
-            Changes, including removal from the list, can be{" "}
+            Changes, including removal from the list, can be requested via email
+            at
             <Link href="/edit" className="font-semibold">
-              requested here
+              contact@opendoorsformaui.com
             </Link>
             .
           </p>

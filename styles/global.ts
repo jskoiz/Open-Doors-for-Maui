@@ -216,9 +216,6 @@ export default css.global`
     transition: transform 150ms ease;
   }
 
-  .sticky {
-    display: table;
-  }
   .sticky tr {
     position: fixed;
     width: 95vw;

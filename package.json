@@ -10,7 +10,9 @@
     "format": "prettier --write 'projectA/*.js' 'projectB/*.js'"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@sendgrid/mail": "^7.6.0",
+    "@tremor/react": "^3.6.1",
     "autoprefixer": "^10.4.14",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "clsx": "^1.2.1",

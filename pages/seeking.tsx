@@ -61,7 +61,7 @@ export default function JoinStep1({ pageTitle }) {
             >
               <p className="f1 extend">
                 <motion.span className="text-stone-800" variants={item}>
-                  We are here to help.
+                  Find Assistance.
                 </motion.span>{" "}
               </p>
               <h2>
