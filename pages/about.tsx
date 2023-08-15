@@ -57,9 +57,12 @@ export default function AboutPage({ pageTitle }) {
             <motion.span className="text-stone-800" variants={item}>
               Open Doors for Maui <br></br>
               <h2>
-                is a community built directory created to help connect those
-                displaced by the fires on Maui with individuals and
-                organizations who can help.
+                is a community directory created to help connect those displaced
+                by the fires on Maui and a{" "}
+                <strong className="font-semibold text-stone-800">
+                  free to use platform for community organizations to streamline
+                  their recovery efforts.
+                </strong>
               </h2>
             </motion.span>{" "}
           </p>
@@ -85,78 +88,85 @@ export default function AboutPage({ pageTitle }) {
           <h3 className="text-lg font-bold text-stone-800">What is this?</h3>
           <p>
             ODFM (Open Doors for Maui) is a community maintained directory where
-            anyone affected and seeking shelter can easily share their
-            information discretely to be matched with available housing.
+            anyone affected by the Maui wildfires can easily share their
+            information discretely to be matched with available housing or
+            supplies.
           </p>
           <p>
-            The objective is to display the genuine needs of the affected
-            community and the available resources in a transparent way, while
-            ensuring sensitive user data is protected and not misused.
-          </p>
-          <p>
-            This platform is designed with privacy of users as the priority. All
-            personally identifiable information shared is privately and securely
-            stored. This data is only meant to be aggregated and shared with
-            recognized organizations assisting those affected by the disaster.
+            It serves as an open and free platform for community organizations
+            to streamline their recovery effort by directing their inquiries to
+            ODFM they can then easily manage and track requests from a secure
+            and easy to use dashboard.
           </p>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
-            For those willing to host.
+            This is a free platform and tool for all organizations involved in
+            the recovery efforts of Maui.
           </h3>
           <p>
-            Hosts can submit their details, including the number of people they
-            can accommodate, as well as the duration of stay they can provide.
+            ODFM is designed to facilitate inquiries from all parts of the
+            community efficiently and securely. If your organization would like
+            to make use of the platform:
           </p>
+
           <ul className="list-disc pl-5">
             <li>
-              Public Listing: Only the host's first name, last initial,
-              generalized location, and the capacity (whether they can host an
-              individual or a family) are displayed publicly.
+              Direct your community to send their inquiries in via{" "}
+              <Link href="/" target="_blank" className="font-semibold">
+                opendoorsformaui.com
+              </Link>{" "}
             </li>
             <li>
-              Privacy: All other personal details are kept private and are only
-              shared with approved organizations that can assist.
+              Have an administrator request secure access to the platform by
+              completing{" "}
+              <Link
+                href="https://form.fillout.com/t/sRrjMRNfjfus"
+                target="_blank"
+                className="font-semibold"
+              >
+                this access request form
+              </Link>
+              .
             </li>
           </ul>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
-            For Shelter Seekers:
+            For those offering shelter or donations of supplies:
           </h3>
           <p>
-            Individuals or families in need can provide their details, including
-            family size and whether or not they are able to relocate to another
-            island. This information is then shared with relevant organizations
-            assisting in relocating efforts to match with currently available
-            housing.
-          </p>{" "}
-          <ul className="list-disc pl-5">
-            <li>
-              Public Details: only first name, last initial, current general
-              location, and need designation (individual or family) are listed
-              publicly.
-            </li>
-            <li>
-              Privacy: All other personal details are kept private and are only
-              shared with approved organizations that can assist.
-            </li>
-          </ul>
+            Please use the relevant forms to share detailed information about
+            your available space or intended donation. If you have additional
+            questions please email contact@opendoorsformaui.com
+          </p>
+        </section>
+        <section className="flex flex-col gap-2">
+          <h3 className="text-lg font-bold text-stone-800">
+            If you need shelter or supplies:
+          </h3>
+          <p>
+            For housing request please fill out the{" "}
+            <Link
+              href="/find-hosting"
+              target="_blank"
+              className="font-semibold"
+            >
+              shelter request form
+            </Link>
+            . If you need supplies you can share details about your specific
+            needs and where you can comfortably pick them up on the{" "}
+            <Link
+              href="/find-supplies"
+              target="_blank"
+              className="font-semibold"
+            >
+              supplies request form
+            </Link>
+            .{" "}
+          </p>
         </section>
 
-        <section className="flex flex-col gap-2">
-          <h3 className="text-lg font-bold text-stone-800">
-            Who can list available space on this app for emergency housing due
-            to the Maui fires?
-          </h3>
-          <p>
-            Hotel groups, companies, and individuals with available space are
-            all encouraged to share their willingness to help. Our aim is
-            facilitate connections between those who have accommodations to
-            offer with those impacted by the Maui fires in need of emergency
-            housing by aggregating and organizing this information.
-          </p>
-        </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
             How did you come up with this idea?
