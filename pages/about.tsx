@@ -133,12 +133,38 @@ export default function AboutPage({ pageTitle }) {
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
-            For those offering shelter or donations of supplies:
+            If you're offering shelter or donations of supplies:
           </h3>
           <p>
-            Please use the relevant forms to share detailed information about
-            your available space or intended donation. If you have additional
-            questions please email contact@opendoorsformaui.com
+            You can submit your intent to offer shelter via the form{" "}
+            <Link
+              href="/offer-hosting"
+              target="_blank"
+              className="font-semibold"
+            >
+              here
+            </Link>
+            .{" "}
+          </p>
+          <p>
+            The{" "}
+            <Link
+              href="/offer-donations"
+              target="_blank"
+              className="font-semibold"
+            >
+              offer donations form
+            </Link>{" "}
+            can be used to share details about your donation of supplies. If you
+            have additional questions please email{" "}
+            <a
+              href="mailto:contact@opendoorsformaui.com"
+              target="_blank"
+              className="font-semibold"
+            >
+              contact@opendoorsformaui.com
+            </a>
+            .
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -267,14 +293,19 @@ export default function AboutPage({ pageTitle }) {
 
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
-            How can I update my profile? Or remove myself altogether?
+            How can I update my information? Or remove myself altogether?
           </h3>
           <p>
-            Changes, including removal from the list, can be requested via email
+            If you have not yet been contacted regarding your inquiry you can
+            send change requests, including removal from the directory via email
             at&nbsp;
-            <Link href="/edit" className="font-semibold">
+            <a
+              href="mailto:contact@opendoorsformaui.com"
+              target="_blank"
+              className="font-semibold"
+            >
               contact@opendoorsformaui.com
-            </Link>
+            </a>
             .
           </p>
         </section>
