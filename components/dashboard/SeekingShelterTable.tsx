@@ -22,37 +22,37 @@ type Person = {
 
 const salesPeople: Person[] = [
   {
-    name: "Nani L.",
+    name: "Enzo M.",
     space: "2-3 ʻOhana",
     relocate: "Yes",
   },
   {
-    name: "Richard D.",
+    name: "Tanna O..",
     space: "2-3 ʻOhana",
     relocate: "No",
   },
   {
-    name: "Pat K.",
+    name: "Jin Y.",
     space: "2-3 ʻOhana",
     relocate: "No",
   },
   {
-    name: "Dawn L.",
+    name: "Glenn P.",
     space: "2-3 ʻOhana",
     relocate: "No",
   },
   {
-    name: "Tricia P.",
+    name: "Kuuipo K.",
     space: "2-3 ʻOhana",
     relocate: "Yes",
   },
   {
-    name: "Leimomi K.",
+    name: "Elle K.",
     space: "2-3 ʻOhana",
     relocate: "No",
   },
   {
-    name: "Shaun A.",
+    name: "Royce E",
     space: "1 (Individual)",
     relocate: "Yes",
   },

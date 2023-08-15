@@ -23,25 +23,25 @@ type Person = {
 
 const salesPeople: Person[] = [
   {
-    name: "George L.",
+    name: "Lana K.",
     space: "2-3 ʻOhana",
     city: "Kahului",
     island: "Maui",
   },
   {
-    name: "Lena W.",
+    name: "Mahina T.",
     space: "3-4 'Ohana",
     city: "Kula",
     island: "Maui",
   },
   {
-    name: "Phil L.",
+    name: "Ronald H.",
     space: "1 Individual",
     city: "Honolulu",
     island: "'Oahu",
   },
   {
-    name: "John C.",
+    name: "Geoff M.",
     space: "2-3 ʻOhana",
     city: "Hilo",
     island: "Hawai'i Island",

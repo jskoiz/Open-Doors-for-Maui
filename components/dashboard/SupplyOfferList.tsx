@@ -4,7 +4,7 @@ const donationOffers = [
   { name: "Food", value: 8 },
   { name: "Water", value: 9 },
   { name: "Hygienic Items", value: 4 },
-  { name: "Infant Items", value: 2 },
+  { name: "Infant Items", value: 5 },
   { name: "Medicine", value: 2 },
 ];
 

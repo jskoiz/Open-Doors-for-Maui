@@ -2,7 +2,7 @@ import { Card, Metric, Text, Title, BarList, Flex, Grid } from "@tremor/react";
 
 const supplyNeeds = [
   { name: "Food", value: 8 },
-  { name: "Water", value: 10 },
+  { name: "Water", value: 13 },
   { name: "Hygienic Items", value: 4 },
   { name: "Infant Items", value: 6 },
   { name: "Medicine", value: 3 },

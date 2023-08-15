@@ -34,35 +34,35 @@ const march: TransactionCategory[] = [
     name: "Offer Shelter",
     icon: HomeIcon,
     color: "green",
-    numTransactions: 13,
-    amount: "13",
+    numTransactions: 14,
+    amount: "1",
   },
   {
     name: "Seeking Shelter",
     icon: MapIcon,
     color: "green",
     numTransactions: 4,
-    amount: "5",
+    amount: "0",
   },
   {
     name: "Offering Supplies",
     icon: ArchiveIcon,
     color: "green",
-    numTransactions: 25,
-    amount: "25",
+    numTransactions: 29,
+    amount: "4",
   },
   {
     name: "Seeking Supplies",
     icon: TagIcon,
     color: "emerald",
-    numTransactions: 31,
-    amount: "31",
+    numTransactions: 33,
+    amount: "3",
   },
 ];
 
 const lastUpdated = [
   {
-    name: "Last Updated: 8/13/20223 - 7:00PM",
+    name: "Last Updated: 8/14/20223 - 7:00PM",
     data: march,
   },
 ];
