@@ -25,7 +25,7 @@ export default function HomePage({ pageTitle }) {
             <Title text="Open&nbsp;Doors*for&nbsp;Maui" />
           </div>
 
-          <section className="flex flex-col gap-4">
+          <section className="flex flex-col gap-4           text-2xl">
             <h3 className="text-lg font-bold text-stone-800">
               On August 8th, 2023 a rapidly spreading wildfire devastated West
               Maui.
@@ -42,7 +42,7 @@ export default function HomePage({ pageTitle }) {
                 Open Their Doors for Maui.
               </strong>
             </p>
-            <p className="">
+            <p>
               ODFM is a secure and easy-to-use platform designed to assist all
               groups involved in Maui's recovery efforts. By streamlining
               resource management, it simplifies coordination and organization,
