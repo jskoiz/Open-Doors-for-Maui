@@ -5,7 +5,7 @@ interface HitLogoProps {
   inline?: boolean;
 }
 
-export default function HitLogo({ fullWidth, inline }: HitLogoProps) {
+export default function ODFMlogo({ fullWidth, inline }: HitLogoProps) {
   return (
     <>
       <img className="logo" src={"/images/odfm-logo.png"} alt="Website logo" />

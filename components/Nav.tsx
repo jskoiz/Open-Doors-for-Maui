@@ -1,4 +1,4 @@
-import HitLogo from "@/components/HitLogo";
+import HitLogo from "components/ODFMlogo";
 import { Icon, IconAsset, IconColor } from "@/components/icon/icon";
 import Link from "next/link";
 
