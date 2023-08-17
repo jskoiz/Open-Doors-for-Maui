@@ -8,7 +8,7 @@ interface HitLogoProps {
 export default function HitLogo({ fullWidth, inline }: HitLogoProps) {
   return (
     <>
-      <img className="logo" src={"/images/maui.png"} alt="Website logo" />
+      <img className="logo" src={"/images/odfm-logo.png"} alt="Website logo" />
       <style jsx>{`
         .logo {
           width: ${fullWidth ? "100%" : "5.4rem"};
