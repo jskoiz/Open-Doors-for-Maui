@@ -30,12 +30,6 @@ export function Dashboard() {
             <div className="mt-2"></div>
           </TabPanel>
         </TabPanels>
-        <Grid numItems={1} numItemsSm={2} numItemsLg={3} className="gap-2">
-          <Col numColSpan={1} numColSpanLg={2}>
-            <Recent />{" "}
-          </Col>
-          <Rrs />
-        </Grid>
       </TabGroup>
     </main>
   );

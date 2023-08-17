@@ -1,10 +1,11 @@
+import React from "react";
 import MetaTags from "@/components/Metatags";
 import Nav from "@/components/Nav";
 import Plausible from "@/components/Plausible";
 import { Title } from "@/components/Title.js";
 import Head from "next/head";
-import React from "react";
 import { Dashboard } from "components/dashboard/Grid";
+import Cookie6 from "@/components/Cookies";
 
 export default function HomePage({ pageTitle }) {
   return (
@@ -16,7 +17,7 @@ export default function HomePage({ pageTitle }) {
       </Head>
       <Nav primaryNav={{ show: true }} />
       <div
-        className={`flex flex-col gap-4 px-4 pt-[6vh] lg:flex-row lg:gap-x-8 lg:px-8`}
+        className={`flex flex-col gap-4 px-4 pt-[1vh] lg:flex-row lg:gap-x-8 lg:px-8`}
       >
         <div className="flex flex-col gap-4 lg:w-1/2">
           <div className="mb-[20px]">
@@ -32,25 +33,34 @@ export default function HomePage({ pageTitle }) {
               The historic town of&nbsp;
               <strong className="font-semibold text-stone-800">Lāhainā</strong>
               &nbsp;was destroyed. In response to this tragedy, residents from
-              across Hawaii and beyond immediately rallied to offer support and
-              assistance. With numerous residents displaced from their homes,
-              Governor Josh Green issued a plea urging those in Hawaii capable
-              of doing so to&nbsp;
+              across Hawaii and beyond immediately rallied to offer support
+              through donations and shelter. With so many displaced from their
+              homes, Governor Josh Green issued a plea urging those in Hawaii
+              capable of doing so to&nbsp;
               <strong className="font-semibold text-stone-800">
                 Open Their Doors for Maui.
               </strong>
             </p>
-            <p className="mb-5">
-              This site has been built by the community to foster&nbsp;
+            <p className="">
+              ODFM is a secure and easy-to-use platform designed to assist all
+              groups involved in Maui's recovery efforts. By streamlining
+              resource management, it simplifies coordination and organization,
+              allowing these groups to concentrate on their primary mission:
               <strong className="font-semibold text-stone-800">
-                connections between people who are able to offer assistance
-                through shelter and donations with those who need it most.
+                aiding those affected by this tragedy.
               </strong>
             </p>
+            <p>
+              Open Doors for Maui was developed locally in Honolulu and is
+              offered entirely free to any organization participating in Maui's
+              recovery.
+            </p>
+
+            <p></p>
           </section>
         </div>
 
-        <div className="justify-center overflow-hidden lg:w-1/3">
+        <div className="justify-center overflow-hidden p-10 lg:w-1/2">
           <img
             src="/images/lahaina.png"
             alt="Lāhainā Image"
@@ -59,7 +69,11 @@ export default function HomePage({ pageTitle }) {
         </div>
       </div>
       <div className={`px-4 lg:px-8`}>
-        <Dashboard />{" "}
+        <Dashboard />
+      </div>
+
+      <div className={`mx-3 w-1/3 px-4 lg:px-8`}>
+        <Cookie6 />
       </div>
     </>
   );
