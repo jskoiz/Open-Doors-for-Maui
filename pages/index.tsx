@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 import Plausible from "@/components/Plausible";
 import { Title } from "@/components/Title.js";
 import Head from "next/head";
-import Image from "next/image"; // 1. Import the Image component
+import Image from "next/image";
 import { Dashboard } from "components/dashboard/Grid";
 import Cookie6 from "@/components/Cookies";
 
@@ -62,10 +62,10 @@ export default function HomePage({ pageTitle }) {
         </div>
         <div className="justify-center overflow-hidden p-10 lg:w-1/2">
           <Image
-            src="/images/lahaina.jpg"
+            src="/images/lahaina.webp"
             alt="Lāhainā Image"
-            width={1024} // 3. Provide width
-            height={768} // 3. Provide height
+            width={1024}
+            height={768}
             className="h-auto w-full md:w-3/4 lg:w-full"
           />
         </div>

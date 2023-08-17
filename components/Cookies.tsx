@@ -8,9 +8,10 @@ const Cookie6 = () => {
     <div
       className={`${
         !open && "hidden"
-      } fixed bottom-4 right-4 z-50 hidden w-1/3 rounded-lg bg-maui-400 bg-opacity-80 px-2 py-3 lg:block`}
+      } w-1/16 fixed bottom-4 right-4 z-50 rounded-lg bg-maui-400 bg-opacity-80 px-2 py-3`}
     >
-      <div className="relative flex flex-col items-center justify-around md:flex-row">
+      <div className="items-right relative flex flex-col justify-around md:flex-row">
+        {/* :COOKIE INFOS */}
         <p className="mb-2 text-center text-sm font-semibold text-maui-200 md:mb-0 md:text-left md:text-base">
           Open Doors for Maui does not collect user data or cookies. For more
           information, please see our{" "}
@@ -23,6 +24,7 @@ const Cookie6 = () => {
           .
         </p>
 
+        {/* :ACTIONS */}
         <div className="flex flex-shrink-0 space-x-5 md:ml-5">
           <button
             className="hidden text-maui-50 hover:text-white md:block"
