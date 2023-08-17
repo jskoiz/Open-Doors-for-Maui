@@ -62,7 +62,7 @@ export default function HomePage({ pageTitle }) {
 
         <div className="justify-center overflow-hidden p-10 lg:w-1/2">
           <img
-            src="/images/lahaina.png"
+            src="/images/lahaina.jpg"
             alt="Lāhainā Image"
             className="h-auto w-full md:w-3/4 lg:w-full"
           />
