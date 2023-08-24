@@ -10,9 +10,9 @@ const Cookie6 = () => {
         !open && "hidden"
       } fixed bottom-4 right-4 z-50 w-full rounded-lg bg-maui-400 bg-opacity-80 p-2 md:w-1/3 lg:w-1/4`}
     >
-      <div className="flex flex-col items-end md:flex-row md:justify-between">
-        {/* :COOKIE INFOS */}
-        <p className="mb-2 text-center text-sm font-semibold text-maui-200 md:mb-0 md:text-left md:text-base">
+      <div className="flex flex-row items-center justify-between">
+        {/* COOKIE INFOS */}
+        <p className="flex-grow pr-2 text-sm font-semibold text-maui-200 md:text-base">
           Open Doors for Maui does not collect user data or cookies. For more
           information, please see our{" "}
           <a
@@ -24,11 +24,14 @@ const Cookie6 = () => {
           .
         </p>
 
-        {/* :ACTIONS */}
-        <div className="flex flex-shrink-0 space-x-5">
+        {/* ACTIONS */}
+        <div className="flex-shrink-0">
           <button
-            className="text-maui-50 hover:text-white"
-            onClick={() => setOpen(false)}
+            className="m-0 inline-block p-0 text-maui-50 hover:text-white"
+            onClick={() => {
+              console.log("Close button clicked");
+              setOpen(false);
+            }}
           >
             <XIcon className="h-6 w-6" />
           </button>
