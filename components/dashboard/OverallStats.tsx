@@ -62,7 +62,7 @@ const march: TransactionCategory[] = [
 
 const lastUpdated = [
   {
-    name: "Last Updated: 8/16/20223 - 7:00AM HST",
+    name: "",
     data: march,
   },
 ];
