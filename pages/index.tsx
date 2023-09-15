@@ -77,7 +77,6 @@ export default function HomePage({ pageTitle }) {
         <div className={`px-4 lg:px-8`}>
           <Dashboard />
         </div>
-        <Cookie6 />
       </section>
     </>
   );
