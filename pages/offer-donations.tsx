@@ -61,15 +61,15 @@ export default function JoinStep1({ pageTitle }) {
             >
               <p className="f1 extend">
                 <motion.span className="text-stone-800" variants={item}>
-                  Share what you can donate.
+                  Donation intake is closed.
                 </motion.span>{" "}
               </p>
               <h2>
-                Please share details about the items and quantities you can
-                provide.{" "}
+                Open Doors for Maui is archived and no longer accepts donation
+                offers.
               </h2>
               <p className="pt-2">
-                For specific questions please email contact@opendoorsformaui.com
+                The original donation form has been removed.
               </p>
             </motion.div>
           </div>

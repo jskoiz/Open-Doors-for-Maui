@@ -8,9 +8,9 @@ interface MetaTagsProps {
 }
 
 export default function MetaTags({
-  description = "Connecting those displaced by the Maui fire to resources and shelter.",
-  image = "https://www.opendoorsformaui.com/images/odfm.png",
-  pathname = "https://www.opendoorsformaui.com",
+  description = "Archived source for the dormant Open Doors for Maui project.",
+  image = "/images/odfm.png",
+  pathname = "/",
   title = "Open Doors for Maui",
 }: MetaTagsProps) {
   return (

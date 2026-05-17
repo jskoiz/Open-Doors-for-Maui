@@ -87,84 +87,36 @@ export default function AboutPage({ pageTitle }) {
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">What is this?</h3>
           <p>
-            ODFM (Open Doors for Maui) is a community maintained directory where
-            anyone affected by the Maui wildfires can easily share their
+            ODFM (Open Doors for Maui) was a community maintained directory
+            where anyone affected by the Maui wildfires could share their
             information discretely to be matched with available housing or
             supplies.
           </p>
           <p>
-            It serves as an open and free platform for community organizations
-            to streamline their recovery effort by directing their inquiries to
-            ODFM they can then easily manage and track requests from a secure
-            and easy to use dashboard.
+            The project is now dormant and preserved for historical reference.
+            Its original intake forms, dashboard access, and deployment
+            automation are intentionally disabled.
           </p>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
-            This is a free platform and tool for all organizations involved in
-            the recovery efforts of Maui.
+            This archive is not an active platform.
           </h3>
           <p>
-            ODFM is designed to facilitate inquiries from all parts of the
-            community efficiently and securely. If your organization would like
-            to make use of the platform:
+            The original operational platform is no longer accepting inquiries,
+            administrator access requests, or public intake submissions.
           </p>
-
-          <ul className="list-disc pl-5">
-            <li>
-              Direct your community to send their inquiries in via{" "}
-              <Link href="/" target="_blank" className="font-semibold">
-                opendoorsformaui.com
-              </Link>{" "}
-            </li>
-            <li>
-              Have an administrator request secure access to the platform by
-              completing{" "}
-              <Link
-                href="https://form.fillout.com/t/sRrjMRNfjfus"
-                target="_blank"
-                className="font-semibold"
-              >
-                this access request form
-              </Link>
-              .
-            </li>
-          </ul>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">
             If you're offering shelter or donations of supplies:
           </h3>
           <p>
-            You can submit your intent to offer shelter via the form{" "}
-            <Link
-              href="/offer-hosting"
-              target="_blank"
-              className="font-semibold"
-            >
-              here
-            </Link>
-            .{" "}
+            The original shelter and donation offer forms are closed. This site
+            is kept as an archive only.
           </p>
           <p>
-            The{" "}
-            <Link
-              href="/offer-donations"
-              target="_blank"
-              className="font-semibold"
-            >
-              offer donations form
-            </Link>{" "}
-            can be used to share details about your donation of supplies. If you
-            have additional questions please email{" "}
-            <a
-              href="mailto:contact@opendoorsformaui.com"
-              target="_blank"
-              className="font-semibold"
-            >
-              contact@opendoorsformaui.com
-            </a>
-            .
+            No new submissions are monitored from this repository.
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -172,24 +124,9 @@ export default function AboutPage({ pageTitle }) {
             If you need shelter or supplies:
           </h3>
           <p>
-            For housing request please fill out the{" "}
-            <Link
-              href="/find-hosting"
-              target="_blank"
-              className="font-semibold"
-            >
-              shelter request form
-            </Link>
-            . If you need supplies you can share details about your specific
-            needs and where you can comfortably pick them up on the{" "}
-            <Link
-              href="/find-supplies"
-              target="_blank"
-              className="font-semibold"
-            >
-              supplies request form
-            </Link>
-            .{" "}
+            The original shelter and supply request forms are closed. This
+            archive should not be used for urgent help or active resource
+            coordination.
           </p>
         </section>
 
@@ -296,17 +233,9 @@ export default function AboutPage({ pageTitle }) {
             How can I update my information? Or remove myself altogether?
           </h3>
           <p>
-            If you have not yet been contacted regarding your inquiry you can
-            send change requests, including removal from the directory via email
-            at&nbsp;
-            <a
-              href="mailto:contact@opendoorsformaui.com"
-              target="_blank"
-              className="font-semibold"
-            >
-              contact@opendoorsformaui.com
-            </a>
-            .
+            The original directory workflow is no longer active from this code
+            base. This repository should not be treated as a live source of
+            support or participant data.
           </p>
         </section>
       </div>

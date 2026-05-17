@@ -1,8 +1,18 @@
 # Open Doors for Maui
 
+## Archive Notice
+
+This project is dormant and preserved for archival purposes only.
+
+Open Doors for Maui is no longer a live service. Intake forms, hosting offers,
+donation offers, support requests, and deployment automation are intentionally
+disabled. Do not use this repository as an active emergency-support directory or
+as a deployment source without first revalidating the product, data handling,
+privacy model, and operational ownership.
+
 _Open Doors for Maui_ is a community-built directory designed to connect those displaced by the Maui fires with individuals and organizations eager to help.
 
-**ODFM (Open Doors for Maui)** is a live directory where anyone affected and seeking shelter can seamlessly share their information with the pertinent organizations. The primary goal is to transparently showcase the genuine needs of the impacted community alongside the available resources, while ensuring the protection and privacy of sensitive user data.
+**ODFM (Open Doors for Maui)** was built as a directory where people affected and seeking shelter could share their information with pertinent organizations. The primary goal was to transparently showcase the genuine needs of the impacted community alongside the available resources, while ensuring the protection and privacy of sensitive user data.
 
 This platform prioritizes the privacy of its users. All personally identifiable data shared is stored privately and securely. Such data is aggregated and shared only with organizations operating officially to assist those affected by the disaster.
 
@@ -36,11 +46,13 @@ This project is an adaptation of _Hawaiians in Tech_ - a community and directory
 
 ### How can profiles be updated or removed?
 
-For any changes, including removal from the list, please [request here](mailto:contact@opendoorsformaui.com).
+This project is no longer accepting profile updates or removal requests through
+the original intake process.
 
 ## About The Tech Stack
 
-The website is constructed using [Airtable](https://airtable.com/), [Next.js](https://nextjs.org/), and is deployed via [Vercel](https://vercel.com/).
+The website was constructed using Airtable and Next.js. Live deployment has been
+removed because the project is archived.
 
 The code originates from [Hawaiians in Tech](https://hawaiiansintech.org/). Follow the instructions below to get started on your local machine:
 
@@ -87,9 +99,10 @@ import {
 /* 🔺🔺🔺🔺🔺🔺🔺 */
 ```
 
-### Deploy at vercel
+### Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https%3A%2F%2Fgithub.com%2Fjskoiz%2Fopendoorsformaui)
+No deployment workflow is configured. This repository is retained as source
+history only.
 
 ### Useful VS Code extensions
 

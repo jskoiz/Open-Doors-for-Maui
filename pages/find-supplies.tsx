@@ -61,12 +61,12 @@ export default function JoinStep1({ pageTitle }) {
             >
               <p className="f1 extend">
                 <motion.span className="text-stone-800" variants={item}>
-                  Request supplies
+                  Supply requests are closed.
                 </motion.span>{" "}
               </p>
-              <h2>Fill out the form to request specific items you need. </h2>
+              <h2>This archive no longer accepts supply requests.</h2>
               <p className="pt-2">
-                For specific questions please email contact@opendoorsformaui.com
+                The original request form has been removed.
               </p>
             </motion.div>
           </div>
