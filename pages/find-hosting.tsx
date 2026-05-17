@@ -64,9 +64,10 @@ export default function JoinStep1({ pageTitle }) {
                   Find Assistance.
                 </motion.span>{" "}
               </p>
-              <h2>Fill out the form to register your need for housing.</h2>
+              <h2>This archive no longer accepts housing requests.</h2>
               <p className="pt-2">
-                For specific questions please email contact@opendoorsformaui.com
+                The original request form has been removed because Open Doors
+                for Maui is no longer an active service.
               </p>
             </motion.div>
           </div>

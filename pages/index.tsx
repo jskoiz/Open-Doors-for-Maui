@@ -6,7 +6,7 @@ import { Title } from "@/components/Title.js";
 import Head from "next/head";
 import Image from "next/image";
 import { Dashboard } from "components/dashboard/Grid";
-import Cookie6 from "@/components/Cookies";
+import ArchiveNotice from "@/components/ArchiveNotice";
 
 export default function HomePage({ pageTitle }) {
   return (
@@ -18,6 +18,9 @@ export default function HomePage({ pageTitle }) {
       </Head>
       <Nav primaryNav={{ show: true }} />
       <section>
+        <div className="px-4 lg:px-8">
+          <ArchiveNotice />
+        </div>
         <div
           className={`flex flex-col gap-4 px-4 pt-[1vh] lg:flex-row lg:gap-x-8 lg:px-8`}
         >
@@ -46,9 +49,9 @@ export default function HomePage({ pageTitle }) {
                 </strong>
               </p>
               <p>
-                ODFM is a secure and easy-to-use platform designed to assist all
-                groups involved in Maui's recovery efforts. By streamlining
-                resource management, it simplifies coordination and
+                ODFM was built as a secure and easy-to-use platform designed to
+                assist groups involved in Maui's recovery efforts. By
+                streamlining resource management, it simplified coordination and
                 organization, allowing these groups to concentrate on their
                 primary mission:
                 <strong className="font-semibold text-stone-800">
@@ -56,9 +59,8 @@ export default function HomePage({ pageTitle }) {
                 </strong>
               </p>
               <p>
-                Open Doors for Maui was developed locally in Honolulu and is
-                offered entirely free to any organization participating in
-                Maui's recovery.
+                Open Doors for Maui was developed locally in Honolulu. The
+                project is now dormant and preserved here as an archive.
               </p>
 
               <p></p>

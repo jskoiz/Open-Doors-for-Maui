@@ -65,18 +65,10 @@ export default function JoinStep1({ pageTitle }) {
                   Mahalo.
                 </motion.span>{" "}
               </p>
-              <h2>
-                Fill out the form to share details about yourself and the space
-                you can offer.{" "}
-              </h2>
+              <h2>This archive no longer accepts hosting offers.</h2>
               <p className="pt-2">
-                For specific questions please email{" "}
-                <Link
-                  href="mailto:contact@opendoorsformaui.com"
-                  className="font-semibold"
-                >
-                  contact@opendoorsformaui.com
-                </Link>
+                The original intake form has been removed because Open Doors for
+                Maui is no longer an active service.
               </p>
             </motion.div>
           </div>

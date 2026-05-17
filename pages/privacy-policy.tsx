@@ -69,13 +69,8 @@ export default function PrivacyPolicy({ pageTitle }) {
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">Web Analytics</h3>
           <p>
-            We utilize Plausible.io, a lightweight and open-source web analytics
-            platform. Unlike other platforms, Plausible.io does not use cookies
-            and is fully compliant with GDPR, CCPA, and PECR.
-          </p>
-          <p>
-            It is proudly made and hosted in the EU and is powered by
-            European-owned cloud infrastructure.
+            Web analytics have been disabled because this project is now
+            archived.
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -83,14 +78,7 @@ export default function PrivacyPolicy({ pageTitle }) {
             Personal Information
           </h3>
           <p>
-            We guarantee that we do not collect any personal identifiable
-            information from site visitors. The only personal information we
-            collect is voluntarily provided to us by visitors who contact us via
-            email.
-          </p>
-          <p>
-            Rest assured, email addresses are only used to respond to inquiries
-            and are never shared or sold.
+            The archived site does not load intake forms or analytics scripts.
           </p>
         </section>
         <section className="flex flex-col gap-2">
@@ -98,23 +86,15 @@ export default function PrivacyPolicy({ pageTitle }) {
             Hosting & Operations
           </h3>
           <p>
-            Our website and services are securely hosted and operated entirely
-            within the United States.
+            Live hosting and operations have been disabled. This codebase is
+            preserved for historical reference only.
           </p>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="text-lg font-bold text-stone-800">Contact Us</h3>
           <p>
-            If you have any questions or concerns regarding our privacy policy
-            or practices, feel free to reach out to us at{" "}
-            <a
-              href="mailto:contact@opendoorsformaui.com"
-              target="_blank"
-              className="font-semibold"
-            >
-              contact@opendoorsformaui.com
-            </a>
-            .
+            The original project contact channel is no longer advertised from
+            this archived site.
           </p>
         </section>
       </div>
